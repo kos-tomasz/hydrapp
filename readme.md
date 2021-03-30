@@ -9,7 +9,7 @@ Simple website (PwA included) which can help you to stay hydrated during the day
 
 
 
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://raw.githubusercontent.com/kos-tomasz/hydrapp/master/src/assets/img/cover.png)
 ## How to use it?
 
 Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
