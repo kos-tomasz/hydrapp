@@ -1,7 +1,7 @@
 {
   "name": "HYDRAPP",
   "short_name": "HYDRAPP",
-  "theme_color": "#2196F3",
+  "theme_color": "#3767AD",
   "background_color": "#3767AD",
   "display": "standalone",
   "orientation": "portrait",
