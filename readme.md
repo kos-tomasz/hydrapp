@@ -1,24 +1,20 @@
+![cover](https://raw.githubusercontent.com/kos-tomasz/hydrapp/master/src/assets/img/cover.png)
 # HYDRAPP 
 
-Simple website (PwA included) which can help you to stay hydrated during the day.
+Simple website which can help you to stay hydrated during the day.
+Thanks to PWA you can check [HydrApp](https://kos-tomasz.github.io/hydrapp/) on your smartphone too.
+ 
 
-> Remmember to drink water 
+![app](https://raw.githubusercontent.com/kos-tomasz/hydrapp/master/src/assets/img/app.PNG)
 
- **Stay hydrated!**
-
-
-
-
-![cover](https://raw.githubusercontent.com/kos-tomasz/hydrapp/master/src/assets/img/cover.png)
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
+Clone this project to your computer. After that, go to the project directory in console and type `npm install`.
+You can also [check it out](https://kos-tomasz.github.io/hydrapp/) through gh-pages.
 ## Available scripts
 
 `npm run start` - runs development mode
-
 `npm run build` - runs build process for production
-
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
 
+**Remmember to drink water**
