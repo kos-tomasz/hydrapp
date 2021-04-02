@@ -14,8 +14,10 @@ let currentCounter = 0;
 
 const localStorageValue = localStorage.getItem(key);
 
-if (localStorageValue) currentCounter = localStorageValue;
-else currentCounter = localStorage.setItem(key, 0);
+if (localStorageValue) 
+  currentCounter = localStorageValue;
+else 
+  localStorage.setItem(key, 0);
 
 counter.innerHTML = currentCounter;
 
@@ -26,7 +28,8 @@ addButton.addEventListener("click", () => {
 });
 
 removeButton.addEventListener("click", () => {
-  if (currentCounter > 0) currentCounter--;
+  if (currentCounter > 0) 
+    currentCounter--;
   counter.innerHTML = currentCounter;
   localStorage.setItem(key, currentCounter);
 });
