@@ -1,13 +1,83 @@
 @import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-@import "_variables";
-@import "modules/hello.scss";
+@mixin flex($display, $justify-content) {
+  display: $display;
+  justify-content: $justify-content;
+}
+
+@mixin font($size, $style, $weight) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #3767ad;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  @include flex(flex, center);
+  align-items: center;
+}
+
+.main {
+  @include flex(flex, center);
+  flex-direction: column;
+  &__title {
+    @include font(55px, normal, 500);
+    color: #fff;
+    line-height: 64px;
+    @include flex(flex, center);
+    margin: 0 0 64px;
+  }
+}
+
+.glass {
+  width: 280px;
+  height: 280px;
+  background: url(../assets/img/water-glass.svg);
+  background-size: contain;
+  @include flex(flex, center);
+  align-items: center;
+  margin: 0 0 12px;
+  &__counter {
+    @include font(112px, normal, 500);
+    padding-top: 50px;
+    line-height: 131px;
+  }
+}
+
+.button-container {
+  width: 280px;
+  @include flex(flex, space-around);
+  flex-wrap: wrap;
+}
+
+.buttons {
+  margin-top: 36px;
+  width: 216px;
+  height: 48px;
+  @include font(14px, normal, 500);
+  line-height: 16px;
+  color: #f5e5e7;
+  border: none;
+  background: none;
+  &--add {
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+  }
 }
